@@ -453,7 +453,7 @@ inherited FrameAbout: TFrameAbout
         'make readable the layout of any Delphi '
         'Object-Pascal source code.'
         ''
-        'Copyright Anthony Steele 1999-2001')
+        'Copyright Anthony Steele 1999-2002')
       ParentColor = True
       ReadOnly = True
       TabOrder = 1

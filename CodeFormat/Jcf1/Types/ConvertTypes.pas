@@ -33,7 +33,7 @@ type
 
 const
   PROGRAM_VERSION = '0.63';
-  PROGRAM_DATE = 'January 2002';
+  PROGRAM_DATE = 'February 2002';
   PROGRAM_HOME_PAGE = 'http://jedicodeformat.sourceforge.net';
 
 implementation

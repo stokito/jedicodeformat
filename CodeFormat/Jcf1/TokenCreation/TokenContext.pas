@@ -367,7 +367,7 @@ begin
     feProcedureSection := psNotInProcedure;
 
   { after procedure name (and dot), can be an equals sign
-    but an equals sign inside the backets is just a default apram value }
+    but an equals sign inside the backets is just a default param value }
   if (feProcedureSection = psProcedureDefinition) and (pt.Word = wEquals)
     and (fiBracketLevel = 0) then
     feProcedureSection := psProcedureMap;
@@ -465,6 +465,8 @@ begin
 end;
 
 procedure TTokenContext.CheckDeclarationSection(const pt: TToken);
+var
+  lbIgnore: boolean;
 begin
   if pt.TokenType = ttReservedWord then
   begin
@@ -489,11 +491,22 @@ begin
       begin
         { encountering the word function/procedure ends a type/const decalration section
           except when
-          - it is on the RHS of an equals sign, e.g type TFredProc = procedure (x:Integer);
+          - it is on the RHS of an equals sign in a type, e.g type TFredProc = procedure (x:Integer);
+          - it is on the rhs of a colon, e.g. var fred: function(p: pointer): Boolean = nil;
           - it is in a class or interface def
         }
+        lbIgnore := false;
 
-        if (not fbRHSEquals) and (feStructuredType = stNotInStructuredType) then
+        if (feStructuredType <> stNotInStructuredType) then
+          lbIgnore := true;
+
+        if (feDeclarationSection = dsType) and fbRHSEquals  then
+          lbIgnore := true;
+
+        if (feDeclarationSection = dsVar) and fbRHSColon  then
+          lbIgnore := true;
+
+        if not lbIgnore then
           feDeclarationSection := dsNotInDeclaration;
       end;
       wBegin:

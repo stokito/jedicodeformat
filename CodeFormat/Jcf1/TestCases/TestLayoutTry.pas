@@ -13,6 +13,8 @@ interface
 
 implementation
 
+uses Dialogs;
+
 procedure TryProc;
 begin
 end;
@@ -47,6 +49,95 @@ end;
 
 if b then
 TryProc;
+
+end;
+
+
+procedure Test2;
+begin
+
+  try
+    TryProc;
+  finally
+    FinallyProc;
+  end;
+
+  try
+    TryProc;
+  except
+    ShowMessage('Exception!');
+  end;
+
+end;
+
+
+procedure Test3;
+begin
+
+  try
+    begin
+      TryProc;
+    end
+  finally
+    begin
+      FinallyProc;
+    end
+  end;
+
+  try
+    begin
+      TryProc;
+    end
+  except
+    begin
+      ShowMessage('Exception!');
+    end
+  end;
+
+end;
+
+procedure Test4;
+begin
+
+  try
+    begin
+
+      try
+        begin
+          TryProc;
+        end
+        except
+        begin
+          ShowMessage('Exception!');
+        end
+      end;
+
+    end
+    finally
+    begin
+      FinallyProc;
+    end
+  end;
+
+  try
+    begin
+
+      try
+        begin
+          TryProc;
+        end
+        finally
+        begin
+          FinallyProc;
+        end
+      end;
+
+    end
+    except
+    begin
+      ShowMessage('Exception!');
+    end
+  end;
 
 end;
 

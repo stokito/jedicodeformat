@@ -100,7 +100,8 @@ uses
   WarnAssignToFunctionName in '..\Processors\Warnings\WarnAssignToFunctionName.pas',
   SettingsStream in '..\Settings\Streams\SettingsStream.pas',
   RegistrySettings in '..\Settings\Streams\RegistrySettings.pas',
-  AlignComment in '..\Processors\Align\AlignComment.pas';
+  AlignComment in '..\Processors\Align\AlignComment.pas',
+  FileUtils in '..\Utils\FileUtils.pas';
 
 const
   ABOUT_COMMANDLINE =

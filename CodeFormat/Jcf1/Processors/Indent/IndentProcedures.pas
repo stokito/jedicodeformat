@@ -143,6 +143,9 @@ begin
   { in a procedure (excluding a proc def in a class) }
   Result := ((pt.ProcedureSection <> psNotInProcedure) and
     (pt.StructuredType = stNotInStructuredType));
+
+  if Result then
+    Result := not pt.InProcedureTypeDeclaration;
 end;
 
 function TIndentProcedures.NeedsIndent(const pt: TToken): boolean;

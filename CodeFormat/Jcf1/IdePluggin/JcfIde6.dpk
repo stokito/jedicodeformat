@@ -47,6 +47,8 @@ contains
   SetLog in '..\Settings\SetLog.pas',
   frAbout in '..\Ui\Settings\frAbout.pas' {FrameAbout: TFrame},
   fAllSettings in '..\Ui\fAllSettings.pas' {FormAllSettings},
-  frDrop in '..\Utils\frDrop.pas' {FrameDrop: TFrame};
+  frDrop in '..\Utils\frDrop.pas' {FrameDrop: TFrame},
+  Writer in '..\ReadWrite\Writer.pas',
+  fAbout in '..\Ui\fAbout.pas' {frmAboutBox};
 
 end.
