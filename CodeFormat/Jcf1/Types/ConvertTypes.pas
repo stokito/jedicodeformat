@@ -34,6 +34,7 @@ type
 const
   PROGRAM_VERSION = '0.62';
   PROGRAM_DATE = 'November 2001';
+  PROGRAM_HOME_PAGE = 'http://jedicodeformat.sourceforge.net';
 
 implementation
 

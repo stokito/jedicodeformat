@@ -432,10 +432,10 @@ inherited FrameAbout: TFrameAbout
     object lblHomePage: TStaticText
       Left = 2
       Top = 248
-      Width = 213
+      Width = 89
       Height = 17
       Cursor = crHandPoint
-      Caption = 'http://users.iafrica.com/a/as/asteele/delphi'
+      Caption = 'the home page url'
       TabOrder = 3
       OnClick = lblHomePageClick
     end
