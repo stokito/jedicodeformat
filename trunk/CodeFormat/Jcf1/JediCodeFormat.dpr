@@ -151,7 +151,8 @@ uses
   RegistrySettings in 'Settings\Streams\RegistrySettings.pas',
   JCFHelp in 'Utils\JCFHelp.pas',
   FileUtils in 'Utils\FileUtils.pas',
-  AlignComment in 'Processors\Align\AlignComment.pas';
+  AlignComment in 'Processors\Align\AlignComment.pas',
+  TestLayoutTry in 'TestCases\TestLayoutTry.pas';
 
 {$R *.RES}
 
