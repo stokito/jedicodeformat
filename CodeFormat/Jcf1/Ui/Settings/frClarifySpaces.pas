@@ -28,7 +28,7 @@ uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   StdCtrls, ComCtrls, ExtCtrls,
     { local}
-  SettingsFrame, MemoEx, TypedEdit;
+  SettingsFrame, JvTypedEdit, JvEdit;
 
 type
   TfClarifySpaces = class(TfrSettingsFrame)

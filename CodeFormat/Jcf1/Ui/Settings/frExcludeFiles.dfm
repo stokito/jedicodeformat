@@ -15,24 +15,28 @@ inherited fExcludeFiles: TfExcludeFiles
     Height = 13
     Caption = 'Directories to exclude from batch processing'
   end
-  object mFiles: TJvMemoEx
+  object mFiles: TJvMemo
     Left = 0
     Top = 20
     Width = 320
     Height = 100
+    AutoSize = False
     MaxLines = 0
-    AutoVScrollbar = True
+    HideCaret = False
+    ReadOnly = False
     TabOrder = 0
     OnDragDrop = mFilesDragDrop
     OnDragOver = mFilesDragOver
   end
-  object mDirs: TJvMemoEx
+  object mDirs: TJvMemo
     Left = 0
     Top = 146
     Width = 320
     Height = 100
+    AutoSize = False
     MaxLines = 0
-    AutoVScrollbar = True
+    HideCaret = False
+    ReadOnly = False
     TabOrder = 1
     OnDragDrop = mDirsDragDrop
     OnDragOver = mDirsDragOver

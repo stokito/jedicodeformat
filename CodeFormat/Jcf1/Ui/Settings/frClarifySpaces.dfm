@@ -72,9 +72,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 50
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 0
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 0
       MinValue = 0
@@ -87,9 +86,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 50
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 1
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 0
       MinValue = 0
@@ -102,9 +100,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 50
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 2
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 0
       MinValue = 0
@@ -117,9 +114,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 50
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 3
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 0
       MinValue = 0
@@ -132,9 +128,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 50
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 4
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 0
       MinValue = 0
@@ -147,9 +142,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 50
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 5
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 0
       MinValue = 0
@@ -202,9 +196,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 49
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 2
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 12
       MinValue = 0
@@ -217,9 +210,8 @@ inherited fClarifySpaces: TfClarifySpaces
       Width = 49
       Height = 21
       Alignment = taRightJustify
+      ReadOnly = False
       TabOrder = 3
-      WantReturns = False
-      AutoSelect = True
       Value = 0
       MaxValue = 12
       MinValue = 0

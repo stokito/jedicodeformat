@@ -27,11 +27,10 @@ inherited fClarifyReturns: TfClarifyReturns
     Left = 216
     Top = 6
     Width = 49
-    Height = 22
+    Height = 21
     Alignment = taRightJustify
+    ReadOnly = False
     TabOrder = 0
-    WantReturns = False
-    AutoSelect = True
     Value = 0
     MaxValue = 255
     MinValue = 0
@@ -109,11 +108,10 @@ inherited fClarifyReturns: TfClarifyReturns
     Left = 204
     Top = 214
     Width = 49
-    Height = 22
+    Height = 21
     Alignment = taRightJustify
+    ReadOnly = False
     TabOrder = 9
-    WantReturns = False
-    AutoSelect = True
     Value = 0
     MaxValue = 255
     MinValue = 0

@@ -28,7 +28,7 @@ uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   StdCtrls, ExtCtrls,
     { local }
-  SettingsFrame, JCFSettings, MemoEx, TypedEdit;
+  SettingsFrame, JCFSettings;
 
 type
   TfObfuscateSettings = class(TfrSettingsFrame)

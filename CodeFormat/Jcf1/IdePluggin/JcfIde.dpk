@@ -22,15 +22,15 @@ package JcfIde;
 {$WRITEABLECONST ON}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
-{$DESCRIPTION 'Jedi Code Format IDE Pluggin'}
+{$DESCRIPTION 'Jedi Code Format IDE Plugin for Delphi 5'}
 {$DESIGNONLY}
 {$IMPLICITBUILD ON}
 {$DEFINE IDEPLUGGIN}
 
 requires
   vcl50,
+  JVCL200_R50,
   DJCL50,
-  JediControls,
   Vclx50;
 
 contains

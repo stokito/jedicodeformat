@@ -16,7 +16,7 @@ uses
   { delphi }
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   ActiveX, ComObj, ShellAPI,
-  { Drop } DropTarget;
+  { Drop } JCFDropTarget;
 
 type
   TFrameDrop = class(TFrame)
