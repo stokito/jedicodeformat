@@ -59,6 +59,8 @@ begin
   StrReplace(ls, '%VERSION%', PROGRAM_VERSION);
   StrReplace(ls, '%DATE%', PROGRAM_DATE);
   mWhat.Text := ls;
+
+  lblHomePage.Caption := PROGRAM_HOME_PAGE;
 end;
 
 procedure TFrameAbout.Read;
