@@ -137,6 +137,8 @@ type
     function InVarList: Boolean;
     function InProcedureParamList: Boolean;
 
+    function InProcedureTypeDeclaration: Boolean;
+
     function Describe: string;
 
 
@@ -401,13 +403,13 @@ begin
   if (TokenType = ttLiteralString) and not CaseLabelNestingLevel then
     Result := True;
 
-
   if Result then
     exit;
 
   { colon only for var declarations }
   if ((DeclarationSection = dsVar) or (ProcedureSection = psProcedureDeclarations)) and (RHSColon) then
     Result := True;
+
 end;
 
 function TToken.InBrackets: Boolean;
@@ -566,6 +568,12 @@ end;
 function TToken.InProcedureParamList: Boolean;
 begin
   Result := (ProcedureSection = psProcedureDefinition) and (BracketLevel = 1);
+end;
+
+function TToken.InProcedureTypeDeclaration: Boolean;
+begin
+  Result := (DeclarationSection in [dStype, dsVar]) and
+    (ProcedureSection in [psProcedureDefinition, psProcedureDirectives]);
 end;
 
 function TToken.InVarList: Boolean;

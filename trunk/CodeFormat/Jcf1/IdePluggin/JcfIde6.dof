@@ -42,10 +42,10 @@ ImageBase=4194304
 ExeDescription=Jedi Code Format IDE Pluggin
 [Directories]
 OutputDir=
-UnitOutputDir=C:\Code\CodeFormat\Output
-PackageDLLOutputDir=C:\Code\CodeFormat\Output
+UnitOutputDir=C:\CVSCheckout\CodeFormat\Output
+PackageDLLOutputDir=C:\CVSCheckout\CodeFormat\Output
 PackageDCPOutputDir=
-SearchPath=C:\Code\CodeFormat\Output
+SearchPath=C:\CVSCheckout\CodeFormat\Output
 Packages=Vcl50;Vclx50;VclSmp50;Vcldb50;vclado50;ibevnt50;Vclbde50;vcldbx50;Qrpt50;TeeUI50;TeeDB50;Tee50;Dss50;TeeQR50;VCLIB50;Vclmid50;vclie50;Inetdb50;Inet50;NMFast50;webmid50;dclocx50;dclaxserver50
 Conditionals=IDEPLUGGIN
 DebugSourceDirs=
@@ -61,7 +61,7 @@ IncludeVerInfo=1
 AutoIncBuild=0
 MajorVer=0
 MinorVer=6
-Release=0
+Release=3
 Build=0
 Debug=0
 PreRelease=0
@@ -73,7 +73,7 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=Anthony Steele
 FileDescription=Jedi code format D6 IDE pluggin
-FileVersion=0.6.0.0
+FileVersion=0.6.3.0
 InternalName=Jedi Code Format
 LegalCopyright=Anthony Steele 1999-2001 MPL
 LegalTrademarks=
@@ -81,3 +81,23 @@ OriginalFilename=
 ProductName=
 ProductVersion=1.0.0.0
 Comments=
+[Excluded Packages]
+C:\Code\CodeFormat\Exes\JcfIde6.bpl=Jedi Code Format IDE Pluggin
+[HistoryLists\hlConditionals]
+Count=1
+Item0=IDEPLUGGIN
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=1
+Item0=C:\CVSCheckout\CodeFormat\Output
+[HistoryLists\hlUnitOutputDirectory]
+Count=1
+Item0=C:\CVSCheckout\CodeFormat\Output
+[HistoryLists\hlOutputDirectorry]
+Count=1
+Item0=C:\CVSCheckout\CodeFormat\Output
+[HistoryLists\hlBPLOutput]
+Count=1
+Item0=C:\CVSCheckout\CodeFormat\Output

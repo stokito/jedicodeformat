@@ -100,6 +100,7 @@ function TWarnAssignToFunctionName.OnProcessToken(const pt: TToken): TToken;
 var
   ptNext, ptNextTest: TToken;
   lsNewName: string;
+  lbIgnore: boolean;
 begin
   Result := pt;
 
@@ -128,22 +129,34 @@ begin
       if (pt.Word in ProcedureWords) then
       begin
         ptNext := FirstSolidToken;
-        // should be a name?
-        assert((ptNext.TokenType in TextualTokens), 'Unexpected token: ' + ptNext.Describe);
-        lsNewName := ptNext.SourceCode;
-
-        { this could be a member fn, eg. function MyClass.GetSomevalue: integer;
-          in which case the name we want is after a dot,
+        { should be a name?
+          could also be an anon fn type, e.g
+          var fred: function(p: pointer): Boolean = nil;
         }
-        ptNextTest := NextSolidTokenAfter(ptNext);
-        if ptNextTest.TokenType = ttDot then
-        begin
-          ptNextTest := NextSolidTokenAfter(ptNextTest);
-          if ptNext.TokenType = ttWord then
-            lsNewName := ptNextTest.SourceCode;
-        end;
+        lbIgnore := false;
+        if (ptNext.RHSColon) then
+          if (ptNext.TokenType in [ttColon, ttOpenBracket]) then
+            lbIgnore := true;
 
-        fsNameStack.Add(lsNewName);
+
+        if (not lbIgnore) then
+        begin
+          assert((ptNext.TokenType in TextualTokens), 'Unexpected token: ' + ptNext.Describe);
+          lsNewName := ptNext.SourceCode;
+
+          { this could be a member fn, eg. function MyClass.GetSomevalue: integer;
+            in which case the name we want is after a dot,
+          }
+          ptNextTest := NextSolidTokenAfter(ptNext);
+          if ptNextTest.TokenType = ttDot then
+          begin
+            ptNextTest := NextSolidTokenAfter(ptNextTest);
+            if ptNext.TokenType = ttWord then
+              lsNewName := ptNextTest.SourceCode;
+          end;
+
+          fsNameStack.Add(lsNewName);
+        end;
       end;
     end;
 

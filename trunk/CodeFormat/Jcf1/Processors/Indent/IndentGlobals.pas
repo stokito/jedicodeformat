@@ -104,7 +104,7 @@ begin
   if pt.DeclarationSection = dsNotInDeclaration then
     exit;
 
-  if pt.ProcedureSection <> psNotInProcedure then
+  if (pt.ProcedureSection <> psNotInProcedure) and (not pt.InProcedureTypeDeclaration) then
     exit;
 
   if pt.StructuredType <> stNotInStructuredType then

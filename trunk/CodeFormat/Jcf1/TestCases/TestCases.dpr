@@ -60,7 +60,9 @@ uses
   TestExclusionFlags in 'TestExclusionFlags.pas',
   TestBlankLineRemoval in 'TestBlankLineRemoval.pas',
   TestD6 in 'TestD6.pas',
-  TestAlign in 'TestAlign.pas';
+  TestAlign in 'TestAlign.pas',
+  Testgg in 'TestGG.pas',
+  testTemp in 'testTemp.pas';
 
 {$R *.RES}
 

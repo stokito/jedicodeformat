@@ -111,7 +111,7 @@ end;
 
 function TAlignVars.IsTokenInContext(const pt: TToken): boolean;
 begin
-  Result := (pt.DeclarationSection = dsVar) and
+  Result := (pt.DeclarationSection = dsVar) and (pt.BracketLevel < 1) and
     ((not Settings.Align.InterfaceOnly) or (pt.FileSection = fsInterface));
 end;
 
@@ -124,6 +124,10 @@ begin
 
   if Result and (pt.RecordCount > 0) then
     Result := False;
+
+  if Result and (pt.BracketLevel > 0) then
+    Result := False;
+
 end;
 
 function TAlignVars.GetIsEnabled: boolean;

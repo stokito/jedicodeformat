@@ -160,7 +160,7 @@ begin
   Add(TAlignTypeDef.Create);
 
   Add(TPosition.Create);
-  Add(TAlignVars.Create);
+  //Add(TAlignVars.Create);
 
   Add(TPosition.Create);
   Add(TAlignComment.Create);

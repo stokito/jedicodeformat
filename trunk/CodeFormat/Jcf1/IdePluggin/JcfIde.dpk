@@ -39,6 +39,21 @@ contains
   EditorReader in '..\ReadWrite\EditorReader.pas',
   EditorWriter in '..\ReadWrite\EditorWriter.pas',
   EditorConverter in '..\ReadWrite\EditorConverter.pas',
-  Delay in '..\Utils\Delay.pas';
+  Delay in '..\Utils\Delay.pas',
+  JCFSettings in '..\Settings\JCFSettings.pas',
+  TokenType in '..\Types\TokenType.pas',
+  SettingsStream in '..\Settings\Streams\SettingsStream.pas',
+  MiscFunctions in '..\Utils\MiscFunctions.pas',
+  Converter in '..\ReadWrite\Converter.pas',
+  Tokeniser in '..\TokenCreation\Tokeniser.pas',
+  TokenProcessPipeline in '..\Processors\TokenProcessPipeline.pas',
+  CommentEater in '..\Processors\Obfuscate\CommentEater.pas',
+  Replace in '..\Processors\Transform\Replace.pas',
+  NoSpaceBefore in '..\Processors\Spacing\NoSpaceBefore.pas',
+  IndentProcedures in '..\Processors\Indent\IndentProcedures.pas',
+  AlignAssign in '..\Processors\Align\AlignAssign.pas',
+  WarnRealType in '..\Processors\Warnings\WarnRealType.pas',
+  fAllSettings in '..\Ui\fAllSettings.pas' {FormAllSettings},
+  SettingsFrame in '..\Ui\Settings\SettingsFrame.pas' {frSettingsFrame: TFrame};
 
 end.

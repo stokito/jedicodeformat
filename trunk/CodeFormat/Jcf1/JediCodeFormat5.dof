@@ -39,11 +39,11 @@ MaxStackSize=1048576
 ImageBase=4194304
 ExeDescription=
 [Directories]
-OutputDir=C:\Code\CodeFormat\Output5
-UnitOutputDir=C:\Code\CodeFormat\Output5
+OutputDir=C:\CVSCheckout\CodeFormat\Output5
+UnitOutputDir=C:\CVSCheckout\CodeFormat\Output5
 PackageDLLOutputDir=
 PackageDCPOutputDir=
-SearchPath=
+SearchPath=C:\CVSCheckout\CodeFormat\Output5
 Packages=Vcl50;Vclx50;VclSmp50;Vcldb50;vclado50;ibevnt50;Vclbde50;vcldbx50;Qrpt50;TeeUI50;TeeDB50;Tee50;Dss50;TeeQR50;VCLIB50;Vclmid50;vclie50;Inetdb50;Inet50;NMFast50;webmid50;dclocx50;dclaxserver50;VisualComponents;JediControls
 Conditionals=
 DebugSourceDirs=
@@ -81,4 +81,24 @@ ProductName=
 ProductVersion=1.0.0.0
 [Excluded Packages]
 C:\Code\CodeTemplates\Output\CodeTemplates.bpl=Delphi Code Templates
-C:\Code\CodeFormat\Output5\JcfIde.bpl=Jedi Code Format IDE Pluggin
+[HistoryLists\hlConditionals]
+Count=1
+Item0=IDEPLUGGIN
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=2
+Item0=C:\CVSCheckout\CodeFormat\Output5
+Item1=C:\CVSCheckout\CodeFormat\Output
+[HistoryLists\hlUnitOutputDirectory]
+Count=2
+Item0=C:\CVSCheckout\CodeFormat\Output5
+Item1=C:\CVSCheckout\CodeFormat\Output
+[HistoryLists\hlOutputDirectorry]
+Count=1
+Item0=C:\CVSCheckout\CodeFormat\Output5
+[HistoryLists\hlBPLOutput]
+Count=2
+Item0=C:\CVSCheckout\CodeFormat\Output5
+Item1=C:\CVSCheckout\CodeFormat\Output
