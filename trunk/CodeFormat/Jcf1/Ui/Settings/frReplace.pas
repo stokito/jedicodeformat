@@ -28,12 +28,12 @@ uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   StdCtrls,
     { local }
-  SettingsFrame, MemoEx;
+  SettingsFrame, JvMemo;
 
 type
   TfReplace = class(TfrSettingsFrame)
     cbEnable: TCheckBox;
-    mWords: TJvMemoEx;
+    mWords: TJvMemo;
     lblWordList: TLabel;
     procedure cbEnableClick(Sender: TObject);
     procedure FrameResize(Sender: TObject);

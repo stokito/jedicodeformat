@@ -18,13 +18,13 @@ inherited fReplace: TfReplace
     TabOrder = 0
     OnClick = cbEnableClick
   end
-  object mWords: TJvMemoEx
+  object mWords: TJvMemo
     Left = 0
     Top = 48
     Width = 262
     Height = 211
     MaxLines = 0
-    AutoVScrollbar = True
+    
     Align = alBottom
     TabOrder = 1
   end

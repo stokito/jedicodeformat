@@ -9,7 +9,7 @@ MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
 DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
-PROJECTS = JediCodeFormat.exe jcf.exe JcfIde6.bpl
+PROJECTS = JediCodeFormat.exe jcf.exe JcfIde7.bpl
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ JediCodeFormat.exe: JediCodeFormat.dpr
 jcf.exe: CommandLine\jcf.dpr
   $(DCC)
 
-JcfIde6.bpl: IdePluggin\JcfIde6.dpk
+JcfIde7.bpl: IdePluggin\JcfIde7.dpk
   $(DCC)
 
 

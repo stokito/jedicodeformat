@@ -63,7 +63,7 @@ end;
 procedure TEditorWriter.Close;
 var
   lciEditorWriter: IOTAEditWriter;
-  liEndPos: integer;
+//  liEndPos: integer;
 begin
   if fciUnit = nil then
     exit;

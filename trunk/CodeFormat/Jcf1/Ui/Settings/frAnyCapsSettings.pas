@@ -26,15 +26,15 @@ interface
 uses
     { delphi }
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  StdCtrls, ExtCtrls, MemoEx, ComCtrls,
+  StdCtrls, ExtCtrls, ComCtrls,
     { local }
-  SettingsFrame;
+  SettingsFrame, JvMemo;
 
 type
   TfrAnyCapsSettings = class(TfrSettingsFrame)
     Label1: TLabel;
     cbEnableAnyWords: TCheckBox;
-    mWords: TJvMemoEx;
+    mWords: TJvMemo;
     procedure cbEnableAnyWordsClick(Sender: TObject);
     procedure FrameResize(Sender: TObject);
   private

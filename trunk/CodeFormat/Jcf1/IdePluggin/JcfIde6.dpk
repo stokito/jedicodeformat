@@ -22,7 +22,7 @@ package JcfIde6;
 {$WRITEABLECONST ON}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
-{$DESCRIPTION 'Jedi Code Format IDE Pluggin'}
+{$DESCRIPTION 'Jedi Code Format IDE Plugin for Delphi 6'}
 {$DESIGNONLY}
 {$IMPLICITBUILD ON}
 {$DEFINE IDEPLUGGIN}
@@ -30,9 +30,9 @@ package JcfIde6;
 requires
   vcl,
   vclx,
-  DJCL,
   DesignIde,
-  JediControls6;
+  JVCL200_R60,
+  DJCL60;
 
 contains
   JcfIdeRegister in 'JcfIdeRegister.pas',

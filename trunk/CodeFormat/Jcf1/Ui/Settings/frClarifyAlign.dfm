@@ -43,10 +43,9 @@ inherited fClarifyAlign: TfClarifyAlign
     Width = 57
     Height = 21
     Alignment = taRightJustify
+    ReadOnly = False
     TabOrder = 1
-    WantReturns = False
     OnExit = edtMaxColumnExit
-    AutoSelect = True
     Value = 0
     MaxValue = 999
     MinValue = 1
@@ -59,10 +58,9 @@ inherited fClarifyAlign: TfClarifyAlign
     Width = 57
     Height = 21
     Alignment = taRightJustify
+    ReadOnly = False
     TabOrder = 2
-    WantReturns = False
     OnExit = edtMaxColumnExit
-    AutoSelect = True
     Value = 0
     MaxValue = 150
     MinValue = 0
@@ -75,10 +73,9 @@ inherited fClarifyAlign: TfClarifyAlign
     Width = 57
     Height = 21
     Alignment = taRightJustify
+    ReadOnly = False
     TabOrder = 3
-    WantReturns = False
     OnExit = edtMinColumnExit
-    AutoSelect = True
     Value = 0
     MaxValue = 150
     MinValue = 0
@@ -139,9 +136,8 @@ inherited fClarifyAlign: TfClarifyAlign
     Width = 57
     Height = 21
     Alignment = taRightJustify
+    ReadOnly = False
     TabOrder = 5
-    WantReturns = False
-    AutoSelect = True
     Value = 0
     MaxValue = 999
     MinValue = 0

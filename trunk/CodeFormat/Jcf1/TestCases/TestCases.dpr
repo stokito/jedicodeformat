@@ -61,8 +61,7 @@ uses
   TestBlankLineRemoval in 'TestBlankLineRemoval.pas',
   TestD6 in 'TestD6.pas',
   TestAlign in 'TestAlign.pas',
-  Testgg in 'TestGG.pas',
-  testTemp in 'testTemp.pas';
+  Testgg in 'TestGG.pas';
 
 {$R *.RES}
 

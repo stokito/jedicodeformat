@@ -25,19 +25,8 @@ program JediCodeFormat5;
 
 uses
   Forms,
-  JclStrings in '..\External\JCL\Source\JclStrings.pas',
-  JclBase in '..\External\JCL\Source\JclBase.pas',
-  JclFileUtils in '..\External\JCL\Source\JclFileUtils.pas',
-  JclWin32 in '..\External\JCL\Source\JclWin32.pas',
-  JclDateTime in '..\External\JCL\Source\JclDateTime.pas',
-  JclResources in '..\External\JCL\Source\JclResources.pas',
-  JclSysUtils in '..\External\JCL\Source\JclSysUtils.pas',
-  JclSysInfo in '..\External\JCL\Source\JclSysInfo.pas',
-  JclRegistry in '..\External\JCL\Source\JclRegistry.pas',
-  JclSecurity in '..\External\JCL\Source\JclSecurity.pas',
-  JclShell in '..\External\JCL\Source\JclShell.pas',
   frDrop in 'Utils\frDrop.pas' {FrameDrop: TFrame},
-  DropTarget in 'Utils\DropTarget.pas',
+  JCFDropTarget in 'Utils\JCFDropTarget.pas',
   fMain in 'UI\fMain.pas' {frmMain},
   fAbout in 'UI\fAbout.pas' {frmAboutBox},
   frFiles in 'UI\Settings\frFiles.pas' {fFiles: TFrame},
@@ -130,8 +119,6 @@ uses
   FileWriter in 'ReadWrite\FileWriter.pas',
   FileConverter in 'ReadWrite\FileConverter.pas',
   MiscFunctions in 'Utils\MiscFunctions.pas',
-  TypedEdit in '..\JediVCL\Edit\TypedEdit.pas',
-  MemoEx in '..\JediVCL\Edit\MemoEx.pas',
   JCFSettings in 'Settings\JCFSettings.pas',
   SpaceBeforeColon in 'Processors\Spacing\SpaceBeforeColon.pas',
   RemoveBlankLinesInVars in 'Processors\Spacing\RemoveBlankLinesInVars.pas',
@@ -144,7 +131,6 @@ uses
   SetUi in 'Settings\SetUi.pas',
   FormatFlags in 'Types\FormatFlags.pas',
   Warn in 'Processors\Warnings\Warn.pas',
-  ComponentFunctions in '..\JediVCL\ComponentFunctions.pas',
   RemoveBlankLinesAfterProcHeader in 'Processors\Spacing\RemoveBlankLinesAfterProcHeader.pas',
   ReturnChars in 'Processors\Spacing\ReturnChars.pas',
   WarnAssignToFunctionName in 'Processors\Warnings\WarnAssignToFunctionName.pas',
@@ -163,3 +149,4 @@ begin
   Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
 end.
+

@@ -27,13 +27,13 @@ uses
     { delphi }
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
     { local }
-  SettingsFrame, StdCtrls, MemoEx;
+  SettingsFrame, StdCtrls, JvEdit, JvMemo;
 
 type
   TfExcludeFiles = class(TfrSettingsFrame)
-    mFiles: TJvMemoEx;
+    mFiles: TJvMemo;
     lblFilesCaption: TLabel;
-    mDirs: TJvMemoEx;
+    mDirs: TJvMemo;
     lblDirsCaption: TLabel;
     procedure FrameResize(Sender: TObject);
     procedure mFilesDragOver(Sender, Source: TObject; X, Y: Integer;

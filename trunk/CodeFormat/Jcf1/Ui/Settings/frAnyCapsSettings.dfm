@@ -20,14 +20,16 @@ inherited frAnyCapsSettings: TfrAnyCapsSettings
     TabOrder = 0
     OnClick = cbEnableAnyWordsClick
   end
-  object mWords: TJvMemoEx
+  object mWords: TJvMemo
     Left = 0
     Top = 40
     Width = 366
     Height = 190
+    AutoSize = False
     MaxLines = 0
-    AutoVScrollbar = True
+    HideCaret = False
     Align = alBottom
+    ReadOnly = False
     TabOrder = 1
   end
 end

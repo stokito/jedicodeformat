@@ -28,7 +28,7 @@ uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   StdCtrls, ExtCtrls,
     { local }
-  SettingsFrame, MemoEx, ComCtrls;
+  SettingsFrame, ComCtrls;
 
 type
   TfrReservedCapsSettings = class(TfrSettingsFrame)
