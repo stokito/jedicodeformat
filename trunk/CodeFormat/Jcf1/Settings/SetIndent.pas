@@ -44,6 +44,7 @@ type
     fbKeepCommentsWithCodeInGlobals: Boolean;
     fbKeepCommentsWithCodeInClassDef: Boolean;
     fbBorlandCaseIndent: Boolean;
+    fbTryLikeBegin: Boolean;
 
   protected
   public
@@ -74,6 +75,7 @@ type
       read fbKeepCommentsWithCodeInClassDef write fbKeepCommentsWithCodeInClassDef;
 
     property BorlandCaseIndent: boolean read fbBorlandCaseIndent write fbBorlandCaseIndent;
+    property TryLikeBegin: Boolean read fbTryLikeBegin write fbTryLikeBegin;
 
   end;
 
@@ -97,6 +99,7 @@ const
   REG_KEEP_COMMENTS_WTH_CODE_IN_GLOBALS = 'KeepCommentsWithCodeInGlobals';
 
   REG_BORLAND_CASE_INDENT = 'BorlandCaseIndent';
+  REG_TRY_LIKE_BEGIN = 'TryLikeBegin';
 
 constructor TSetIndent.Create;
 begin
@@ -125,6 +128,7 @@ begin
   fbKeepCommentsWithCodeInClassDef := pcStream.Read(REG_KEEP_COMMENTS_WTH_CODE_CLASS_DEF, True);
 
   fbBorlandCaseIndent := pcStream.Read(REG_BORLAND_CASE_INDENT, True);
+  fbTryLikeBegin := pcStream.Read(REG_TRY_LIKE_BEGIN, False);
 end;
 
 procedure TSetIndent.WriteToStream(const pcOut: TSettingsOutput);
@@ -148,6 +152,7 @@ begin
   pcOut.Write(REG_INDENT_BEGIN_END_SPACES, fiIndentBeginEndSpaces);
 
   pcOut.Write(REG_BORLAND_CASE_INDENT, fbBorlandCaseIndent);
+  pcOut.Write(REG_TRY_LIKE_BEGIN, fbTryLikeBegin);
 end;
 
 function TSetIndent.SpacesForIndentLevel(const piLevel: integer): integer;

@@ -44,13 +44,14 @@ unit TokenBareIndent;
 interface
 
 
-uses TokenSource, Token, TokenType;
+uses TokenSource, Token, TokenType, WordMap;
 
 type
 
   TTokenBareIndent = class(TBufferedTokenProcessor)
   private
     fiStartIndent: integer;
+    fwBlockStart: TWordSet; // these symbols start blocks
 
     function BareStatementStart(const pt: TToken): boolean;
     function BareStatementEnd(const ptStart: TToken): integer;
@@ -68,8 +69,6 @@ type
   end;
 
 implementation
-
-uses WordMap;
 
 { TTokenBareIndent }
 
@@ -233,7 +232,7 @@ begin
   begin
     liIndex := 0;
     lcNext  := GetBufferTokenWithExclusions(liIndex, [ttWhiteSpace, ttReturn, ttComment]);
-    if (lcNext.Word <> wBegin) or (Settings.Indent.BorlandCaseIndent and lbCase) then
+    if (not (lcNext.Word in fwBlockStart)) or (Settings.Indent.BorlandCaseIndent and lbCase) then
       Result := True;
 
     { else if - don't indent the else clause, the if .. then takes care of that
@@ -262,6 +261,12 @@ procedure TTokenBareIndent.OnFileStart;
 begin
   inherited;
   fiStartIndent := 0;
+
+  fwBlockStart := [wBegin];
+
+  if Settings.Indent.TryLikeBegin then
+    fwBlockStart := fwBlockStart + [wTry];
+
 end;
 
 function TTokenBareIndent.OnProcessToken(const pt: TToken): TToken;

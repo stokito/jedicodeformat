@@ -785,8 +785,8 @@ begin
   pt.StructuredType   := feStructuredType;
 
   pt.CaseLabelNestingLevel := (fiBlockNestingLevel = fcCaselabelLevels.Top);
-  pt.BlockNestingLevel       := fiBlockNestingLevel;
-  pt.BareNestingLevel       := 0; // this is set by another class - TokenBareIndent
+  pt.BlockNestingLevel     := fiBlockNestingLevel;
+  pt.BareNestingLevel      := 0; // this is set by another class - TokenBareIndent
 
   pt.ProcedureNestingLevel := fiProcedureNestingLevel;
   pt.BracketLevel       := fiBracketLevel;

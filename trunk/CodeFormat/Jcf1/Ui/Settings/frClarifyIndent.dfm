@@ -1,6 +1,6 @@
 inherited fClarifyIndent: TfClarifyIndent
   Width = 310
-  Height = 264
+  Height = 297
   object Label2: TLabel
     Left = 4
     Top = 80
@@ -126,5 +126,13 @@ inherited fClarifyIndent: TfClarifyIndent
     Height = 17
     Caption = 'Borland style case indents'
     TabOrder = 11
+  end
+  object cbTryLikeBegin: TCheckBox
+    Left = 4
+    Top = 245
+    Width = 189
+    Height = 17
+    Caption = 'Try indented like begin'
+    TabOrder = 12
   end
 end

@@ -125,12 +125,79 @@ end;
 { TAClass }
 
 procedure TAClass.Proc1;
+var
+  a: integer;
 begin
+  a := 12;
+  if a > 12 then
+  begin
+    proc3;
+
+    if a > 15 then
+     proc2;
+  end;
+
+  // code in comments is formatted
+
+  {
+  a := 12;
+  if a > 12 then
+  begin
+    proc3;
+
+    if a > 15 then
+     proc2;
+  end;
+  }
+
+  (*
+    a := 12;
+  if a > 12 then
+  begin
+    proc3;
+
+    if a > 15 then
+     proc2;
+  end;
+  *)
 
 end;
 
 procedure TAClass.Proc2;
+var
+  a: integer;
 begin
+  a := 12;
+  if a > 12 then
+  begin
+    proc3;
+
+    if a > 15 then
+     proc2;
+  end;
+
+  // code in comments is not formatted
+{
+a := 12;
+if a > 12 then
+begin
+proc3;
+
+if a > 15 then
+proc2;
+end;
+}
+
+(*
+a := 12;
+if a > 12 then
+begin
+proc3;
+
+if a > 15 then
+proc2;
+end;
+*)
 
 end;
 

@@ -45,6 +45,7 @@ type
     cbKeepWithInGlobals: TCheckBox;
     cbKeepWithInClassDef: TCheckBox;
     cbBorlandCaseIndent: TCheckBox;
+    cbTryLikeBegin: TCheckBox;
     procedure cbIndentBeginEndClick(Sender: TObject);
     procedure cbHasFirstLevelIndentClick(Sender: TObject);
   private
@@ -91,6 +92,7 @@ begin
     cbKeepWithInClassDef.Checked := KeepCommentsWithCodeInClassDef;
 
     cbBorlandCaseIndent.Checked := BorlandCaseIndent;
+    cbTryLikeBegin.Checked := TryLikeBegin;
 
   end;
 
@@ -119,6 +121,7 @@ begin
     KeepCommentsWithCodeInClassDef := cbKeepWithInClassDef.Checked;
 
     BorlandCaseIndent := cbBorlandCaseIndent.Checked;
+    TryLikeBegin := cbTryLikeBegin.Checked;
   end;
 end;
 
