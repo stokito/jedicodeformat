@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = JediCodeFormat.exe jcf.exe JcfIde6.bpl TestCases.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+JediCodeFormat.exe: JediCodeFormat.dpr
+  $(DCC)
+
+jcf.exe: CommandLine\jcf.dpr
+  $(DCC)
+
+TestCases.exe: testcases\TestCases.dpr
+  $(DCC)
+
+JcfIde6.bpl: IdePluggin\JcfIde6.dpk
+  $(DCC)
+
+

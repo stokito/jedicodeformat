@@ -1,0 +1,7 @@
+AFS 9 August 2001
+
+This file exists only because empty directories are not stored in zip files.
+
+Thus the output dir must contain a file in order to be created.
+
+It serves no other purpose. You may remove it.
