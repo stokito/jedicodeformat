@@ -32,8 +32,8 @@ type
   TStatusMessageProc = procedure(const ps: string) of object;
 
 const
-  PROGRAM_VERSION = '0.63';
-  PROGRAM_DATE = 'February 2002';
+  PROGRAM_VERSION = '0.65';
+  PROGRAM_DATE = 'January 2003';
   PROGRAM_HOME_PAGE = 'http://jedicodeformat.sourceforge.net';
 
 implementation

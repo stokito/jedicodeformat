@@ -12,7 +12,7 @@ inherited FrameAbout: TFrameAbout
     TabOrder = 0
     object imgOpenSource: TImage
       Left = 4
-      Top = 8
+      Top = 4
       Width = 109
       Height = 113
       Cursor = crHandPoint
@@ -413,10 +413,7 @@ inherited FrameAbout: TFrameAbout
           'ozilla '
         'Public licence (MPL).  '
         ''
-        
-          'For more information contact the author at asteele@iafrica.com, ' +
-          'or '
-        'find more info in the web at')
+        'Find more information on the web at')
       ReadOnly = True
       TabOrder = 0
     end
@@ -453,7 +450,7 @@ inherited FrameAbout: TFrameAbout
         'make readable the layout of any Delphi '
         'Object-Pascal source code.'
         ''
-        'Copyright Anthony Steele 1999-2002')
+        'Copyright Anthony Steele 1999-2003')
       ParentColor = True
       ReadOnly = True
       TabOrder = 1
